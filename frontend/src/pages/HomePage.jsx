@@ -14,9 +14,7 @@ const HomePage = () => {
         const res = await fetch("http://localhost:5001/api/notes");
         const data = await res.json();
         console.log(data);
-
         setNotes(data);
-        toast.success("Notes loaded successfully");
       } catch (error) {
         toast.error("Failed to load notes");
       } finally {
@@ -35,7 +33,9 @@ const HomePage = () => {
           {loading && <span>Loading...</span>}
           <ul className="notes-layout">
             {notes.length > 0
-              ? notes.map((note) => <NoteCard key={note._id} note={note} />)
+              ? notes.map((note) => (
+                  <NoteCard key={note._id} note={note} setNotes={setNotes} />
+                ))
               : "No notes to display"}
           </ul>
         </div>

@@ -33,7 +33,7 @@ const CreatePage = () => {
   };
 
   return (
-    <div className="create">
+    <div className="create-page">
       <div className="create-container">
         <Link to="/" className="create-back-btn">
           <ArrowLeftIcon /> <span>Back to notes</span>
