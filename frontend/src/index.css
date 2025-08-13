@@ -202,7 +202,8 @@ ul {
   gap: 0.5rem;
 }
 
-.create-btn {
+.create-btn,
+.update-btn {
   padding: 0.5rem 1rem;
   background-color: gray;
   width: fit-content;
