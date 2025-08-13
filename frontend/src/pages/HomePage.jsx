@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import Navbar from "../components/Navbar";
 import toast from "react-hot-toast";
 import NoteCard from "../components/NoteCard";
